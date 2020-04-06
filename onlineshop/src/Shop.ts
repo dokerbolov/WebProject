@@ -1,10 +1,7 @@
-enum Classification {
-  MEN,
-  WOMEN,
-  KID
-}
+import { Classification } from './Classification.enum';
 
 export interface Category {
+  name: string;
   classification: Classification;
 }
 
@@ -15,5 +12,5 @@ export interface Product {
   price: number;
   image: string;
   size: Array<number>;
-  classification: Category;
+  classification: Classification;
 }
