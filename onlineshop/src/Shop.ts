@@ -4,6 +4,10 @@ enum Classification {
   KID
 }
 
+export interface Category {
+  classification: Classification;
+}
+
 export interface Product {
   id: number;
   name: string;
@@ -11,5 +15,5 @@ export interface Product {
   price: number;
   image: string;
   size: Array<number>;
-  classification: Classification;
+  classification: Category;
 }
