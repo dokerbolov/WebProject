@@ -5,17 +5,17 @@
     </p>
     <ul>
     <li *ngFor="let product of products">
-        <a routerLink="/producs/{{product.id}}" (click)="onSelect(product)">
+        <a routerLink="/products/{{product.id}}" (click)="onSelect(product)">
           <h3>
             {{product.name}}
           </h3>
+        </a>
           <p>
             {{product.description}}
           </p>
           <p>
             {{product.price}}
           </p>
-          </a>
     </li>
     </ul>
   </body>

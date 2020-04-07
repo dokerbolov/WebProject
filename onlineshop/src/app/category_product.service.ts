@@ -16,7 +16,7 @@ export class Category_productService {
 
   getProduct(id:number): Observable<Product>
   {
-    return of(products.find(products => products.id === id));
+    return of(products.find(product => product.id === id));
   }
 
   constructor() { }
