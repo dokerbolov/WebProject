@@ -10,7 +10,11 @@ export const products = [
       color: ['red', 'blue', 'white', 'pink'],
       size: [39,40,41,42,43],
       classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
   },
   {
     id: 2,
@@ -20,7 +24,11 @@ export const products = [
     color: ['red', 'yellow', 'white', 'pink'],
     size: [36,38,39,41],
     classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 3,
@@ -31,7 +39,11 @@ export const products = [
   color: ['black', 'purple', 'white', 'pink'],
   size: [29,31,32,33,34,35,36],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 4,
@@ -42,7 +54,11 @@ export const products = [
   color: ['brown', 'white', 'black'],
   size: [31,33,35,36,37],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 5,
@@ -53,7 +69,11 @@ export const products = [
   color: ['brown', 'grey', 'white', 'black'],
   size: [41,42,43,44,45,46],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 6,
@@ -64,7 +84,11 @@ export const products = [
   color: ['grey', 'white', 'black'],
   size: [41,43,45,46],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 7,
@@ -75,7 +99,11 @@ export const products = [
   color: ['brown', 'grey', 'black'],
   size: [36,37,39,40,41,42,44,45],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 8,
@@ -86,7 +114,11 @@ export const products = [
   color: ['grey', 'purple', 'pink', 'white'],
   size: [36,37,38,39,40,42,44],
   classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 9,
@@ -107,7 +139,11 @@ export const products = [
   color: ['grey', 'blue', 'pink'],
   size: [31,33,35,36,37],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 11,
@@ -118,7 +154,11 @@ export const products = [
   color: ['brown'],
   size: [31,32,33,34,35,36,37],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },{
   id: 12,
   name: "Nike. Free RN 5.0",
@@ -128,7 +168,11 @@ export const products = [
   color: ['grey', 'blue', 'red', 'white', 'black'],
   size: [39,42,43,44,45,46,47],
   classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 13,
@@ -139,7 +183,11 @@ export const products = [
   color: ['white', 'black'],
   size: [39,41,42,44,45,47],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 14,
@@ -150,7 +198,11 @@ export const products = [
   color: ['blue', 'red', 'orange', 'white', 'black'],
   size: [39,42,43,44,46,47],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 15,
@@ -161,7 +213,11 @@ export const products = [
   color: ['orange', 'red', 'pink', 'white'],
   size: [39,40,41,42,43,44],
   classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 16,
@@ -172,7 +228,11 @@ export const products = [
   color: ['beige snake', 'beige dot cheetah', 'black'],
   size: [38,39,40,41,42,43,44],
   classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 {
   id: 17,
@@ -205,7 +265,11 @@ export const products = [
   color: ['black', 'white', 'bone croco', 'clear', 'fuchsia', 'gold snake'],
   size: [39,40,41,42,43,44],
   classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -239,7 +303,11 @@ export const products = [
   color: ['black', 'white', 'pink', 'pink 2', 'green', 'navy', 'blue', 'gold'],
   size: [39,40,41,42,43,44],
   classification: Classification.WOMEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -251,7 +319,11 @@ export const products = [
   color: ['white', 'navy'],
   size: [16,18,19,20],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -263,7 +335,11 @@ export const products = [
   color: ['pink', 'yellow', 'red', 'white'],
   size: [16,18,19,20,21,22],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -275,7 +351,11 @@ export const products = [
   color: ['black', 'ribbon red', 'charcoal'],
   size: [16,17,18,19,20],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -287,7 +367,11 @@ export const products = [
   color: ['black', 'white', 'pink', 'fuchsia'],
   size: [16,18,19,20],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -299,7 +383,11 @@ export const products = [
   color: ['desert rose', 'black', 'white'],
   size: [16,18,19,20,21,22,23],
   classification: Classification.KID
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -311,7 +399,11 @@ export const products = [
   color: ['black', 'white', 'cool grey', 'navy'],
   size: [39,40,41,42,43,44],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -323,7 +415,11 @@ export const products = [
   color: ['charcoal', 'canvas', 'black', 'black and white checker'],
   size: [39,40,41,42,43,44],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 },
 
 {
@@ -335,6 +431,10 @@ export const products = [
   color: ['black', 'white', 'marshmallow', 'gum', 'parisian night', 'multi', 'ebony'],
   size: [39,40,41,42],
   classification: Classification.MEN
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> c62386827c051f3a0334d817b714f6dfaebd57f1
 }
 ]
