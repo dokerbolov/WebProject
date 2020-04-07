@@ -1,17 +1,17 @@
-import { Classification } from './../../Classification.enum';
-import { Product } from './../../Shop';
 import { Component, OnInit } from '@angular/core';
 import { Category_productService } from './../category_product.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { Classification } from './../../Classification.enum';
+import { Product } from './../../Shop';
 import { products } from '../products';
 
 @Component({
-  selector: 'app-men-products',
-  templateUrl: './men-products.component.html',
-  styleUrls: ['./men-products.component.css']
+  selector: 'app-women-products',
+  templateUrl: './women-products.component.html',
+  styleUrls: ['./women-products.component.css']
 })
-export class MenProductsComponent implements OnInit {
+export class WomenProductsComponent implements OnInit {
 
   products: Product[] = [];
 
@@ -25,11 +25,11 @@ export class MenProductsComponent implements OnInit {
     private location: Location) { }
 
   ngOnInit() {
-    this.getProductsMen();
+    this.getProductsWomen();
   }
 
-  getProductsMen():void{
-    this.category_productService.getProductsMen(Classification.MEN).subscribe(products => this.products = products);
+  getProductsWomen():void{
+    this.category_productService.getProductsWomen(Classification.WOMEN).subscribe(products => this.products = products);
   }
 
   goBack(){

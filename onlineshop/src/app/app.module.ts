@@ -7,6 +7,7 @@ import { ProductsComponent } from './Products/Products.component';
 import { ProductsDetailComponent } from './ProductsDetail/ProductsDetail.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { MenProductsComponent } from './men-products/men-products.component';
+import { KidProductsComponent } from './kid-products/kid-products.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MenProductsComponent } from './men-products/men-products.component';
       ProductsComponent,
       ProductsDetailComponent,
       CategoriesComponent,
-      MenProductsComponent
+      MenProductsComponent,
+      KidProductsComponent
    ],
    imports: [
       BrowserModule,
