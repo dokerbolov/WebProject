@@ -3,20 +3,24 @@
     <p>
       Products
     </p>
-    <ul>
-    <li *ngFor="let product of products">
-        <a routerLink="/products/{{product.id}}" (click)="onSelect(product)">
+    <p>
+      <a routerLink="/categories">Categories</a>
+    </p>
+    <div style="display: inline-flex; margin: 10px;" *ngFor="let product of products">
+        <a style="text-decoration: none;" routerLink="/products/{{product.id}}" (click)="onSelect(product)">
+          <img style="width: 300px;" src="{{product.image}}">
+          <div style="text-align: center; width: 300px;">
           <h3>
             {{product.name}}
           </h3>
-        </a>
           <p>
             {{product.description}}
           </p>
           <p>
             {{product.price}}
           </p>
-    </li>
-    </ul>
+          </div>
+        </a>
+    </div>
   </body>
 </html>

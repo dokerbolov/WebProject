@@ -1,6 +1,4 @@
 import { Classification } from './../Classification.enum';
-import { categories } from './Category';
-import { Category } from './../Shop';
 
 export const products = [
   {

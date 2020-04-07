@@ -1,6 +1,7 @@
 import { Classification } from './Classification.enum';
 
 export interface Category {
+  id: number;
   name: string;
   classification: Classification;
 }
@@ -11,6 +12,7 @@ export interface Product {
   description: string;
   price: number;
   image: string;
+  color: Array<string>;
   size: Array<number>;
   classification: Classification;
 }

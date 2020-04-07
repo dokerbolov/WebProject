@@ -2,15 +2,18 @@ import { Classification } from './../Classification.enum';
 
 export const categories = [
   {
-      name: "Men",
-      classification: Classification.MEN
+    id: 1,
+    name: "Men",
+    classification: Classification.MEN
   },
   {
-      name: "Women",
-      classification: Classification.WOMEN
+    id: 2,
+    name: "Women",
+    classification: Classification.WOMEN
   },
   {
-      name: "Kid",
-      Classification: Classification.KID
+    id: 3,
+    name: "Kid",
+    classification: Classification.KID
   }
-]
+];
