@@ -1,3 +1,5 @@
+import { Category } from './../Shop';
+import { categories } from './Category';
 import { products } from './products';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
@@ -17,6 +19,11 @@ export class Category_productService {
   getProduct(id:number): Observable<Product>
   {
     return of(products.find(product => product.id === id));
+  }
+
+  getCategories(): Observable<Category[]>
+  {
+    return of(categories);
   }
 
   constructor() { }
