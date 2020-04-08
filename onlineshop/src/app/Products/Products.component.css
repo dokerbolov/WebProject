@@ -1,0 +1,52 @@
+
+#main{
+    position: static;
+    width:100%;
+    display: inline-flex;
+    height: auto;
+    
+}
+.divrek{
+    width:20%;
+    height: 300px;
+    margin: 10px;
+}
+.posleProduct{
+    height: auto;
+    width: 10%;
+    margin: 10px;
+}
+
+
+.divProduct
+{
+    display: inline-flexbox;
+    width: 70%;
+    height: auto;
+}
+.allPr{
+    width:250px;
+    display: inline-block;
+    height: auto;
+    margin: 10px;
+}
+.productDetail{
+    width:250px;
+    height: auto;
+    display: inline-flexbox;
+}
+.boxIm{
+    align-content: center;
+}
+.prodIm{
+    width: 210px;
+    height: 190px;
+    
+}
+.details{
+    text-align: center; 
+    width: 250px;
+}
+.descriptionPrd{
+    display: none;
+}
