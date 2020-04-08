@@ -30,30 +30,30 @@ export class Category_productService {
     return of(categories);
   }
 
-  getProductsMen(classification: Classification.MEN): Observable<Product[]>
+  getProductsMen(id: number): Observable<Product[]>
   {
     for(var product of products){
-      if(product.classification === classification){
+      if(product.category_id === id){
         this.productsMen.push(product);
       }
     }
       return of(this.productsMen);
   }
 
-  getProductsWomen(classification: Classification.WOMEN): Observable<Product[]>
+  getProductsWomen(id: number): Observable<Product[]>
   {
     for(var product of products){
-      if(product.classification === classification){
+      if(product.category_id === id){
         this.productsWomen.push(product);
       }
     }
       return of(this.productsWomen);
   }
 
-  getProductsKid(classification: Classification.KID): Observable<Product[]>
+  getProductsKid(id: number): Observable<Product[]>
   {
     for(var product of products){
-      if(product.classification === classification){
+      if(product.category_id === id){
         this.productsKid.push(product);
       }
     }

@@ -9,7 +9,7 @@ export const products = [
       image: "https://m.media-amazon.com/images/I/71D3K6s3QTL._SX700_.jpg",
       color: ['red', 'blue', 'white', 'pink'],
       size: [39,40,41,42,43],
-      classification: Classification.WOMEN
+      category_id: 2
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const products = [
     image: "https://m.media-amazon.com/images/I/71GRYTgYhPL._SX700_.jpg",
     color: ['red', 'yellow', 'white', 'pink'],
     size: [36,38,39,41],
-    classification: Classification.WOMEN
+    category_id: 2
 },
 {
   id: 3,
@@ -28,7 +28,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71NOD24J0BL._SX700_.jpg",
   color: ['black', 'purple', 'white', 'pink'],
   size: [29,31,32,33,34,35,36],
-  classification: Classification.KID
+  category_id: 3
 },
 {
   id: 4,
@@ -38,7 +38,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81N11m3ww+L._SX700_.jpg",
   color: ['brown', 'white', 'black'],
   size: [31,33,35,36,37],
-  classification: Classification.KID
+  category_id: 3
 },
 {
   id: 5,
@@ -48,7 +48,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/91rbeBXAkXL._SX700_.jpg",
   color: ['brown', 'grey', 'white', 'black'],
   size: [41,42,43,44,45,46],
-  classification: Classification.MEN
+  category_id: 1
 },
 {
   id: 6,
@@ -58,7 +58,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81tp-ij+YML._SX700_.jpg",
   color: ['grey', 'white', 'black'],
   size: [41,43,45,46],
-  classification: Classification.MEN
+  category_id: 1
 },
 {
   id: 7,
@@ -68,7 +68,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81fD0EleeVL._SX700_.jpg",
   color: ['brown', 'grey', 'black'],
   size: [36,37,39,40,41,42,44,45],
-  classification: Classification.MEN
+  category_id: 1
 },
 {
   id: 8,
@@ -78,7 +78,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81vSL0h7nrL._SX700_.jpg",
   color: ['grey', 'purple', 'pink', 'white'],
   size: [36,37,38,39,40,42,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 {
   id: 9,
@@ -88,7 +88,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81CidFoU9LL._SX700_.jpg",
   color: ['brown', 'black'],
   size: [40,41,42,44,45],
-  classification: Classification.MEN
+  category_id: 1
 },
 {
   id: 10,
@@ -98,7 +98,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81WwUm+-IAL._SX700_.jpg",
   color: ['grey', 'blue', 'pink'],
   size: [31,33,35,36,37],
-  classification: Classification.KID
+  category_id: 3
 },
 {
   id: 11,
@@ -108,7 +108,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81VrkQ-uz+L._SX700_.jpg",
   color: ['brown'],
   size: [31,32,33,34,35,36,37],
-  classification: Classification.KID
+  category_id: 3
 },{
   id: 12,
   name: "Nike. Free RN 5.0",
@@ -117,7 +117,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71UcWegbPcL._SX700_.jpg",
   color: ['grey', 'blue', 'red', 'white', 'black'],
   size: [39,42,43,44,45,46,47],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 {
   id: 13,
@@ -127,7 +127,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/613Y8MbQ71L._SX700_.jpg",
   color: ['white', 'black'],
   size: [39,41,42,44,45,47],
-  classification: Classification.MEN
+  category_id: 1
 },
 {
   id: 14,
@@ -137,7 +137,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81KY77cketL._SX700_.jpg",
   color: ['blue', 'red', 'orange', 'white', 'black'],
   size: [39,42,43,44,46,47],
-  classification: Classification.MEN
+  category_id: 1
 },
 {
   id: 15,
@@ -147,7 +147,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71AjhPnMRCL._SX700_.jpg",
   color: ['orange', 'red', 'pink', 'white'],
   size: [39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 {
   id: 16,
@@ -157,7 +157,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71B5iLbbfFL._SX700_.jpg",
   color: ['beige snake', 'beige dot cheetah', 'black'],
   size: [38,39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 {
   id: 17,
@@ -167,7 +167,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81f1a0q4viL._SX700_.jpg",
   color: ['sand leopard', 'black patent', 'classic nude', 'light gold leather'],
   size: [39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 
 {
@@ -178,7 +178,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81MZ8neRQKL._SX700_.jpg",
   color: ['classic nude', 'sand', 'black nubuck', 'gold metallic'],
   size: [39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 
 {
@@ -189,7 +189,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71T88gTjHCL._SX700_.jpg",
   color: ['black', 'white', 'bone croco', 'clear', 'fuchsia', 'gold snake'],
   size: [39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 
 {
@@ -200,7 +200,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71JBWboI4gL._SX700_.jpg",
   color: ['natural leather', 'black leather', 'snake', 'white'],
   size: [39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 
 {
@@ -211,7 +211,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71DadOYQnzL._SX700_.jpg",
   color: ['navy', 'black'],
   size: [39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 
 {
@@ -222,7 +222,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71Rht5kwNVL._SX700_.jpg",
   color: ['black', 'white', 'pink', 'pink 2', 'green', 'navy', 'blue', 'gold'],
   size: [39,40,41,42,43,44],
-  classification: Classification.WOMEN
+  category_id: 2
 },
 
 {
@@ -233,7 +233,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81viaOMJASL._SX700_.jpg",
   color: ['white', 'navy'],
   size: [16,18,19,20],
-  classification: Classification.KID
+  category_id: 3
 },
 
 {
@@ -244,7 +244,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81CD5HgAiAL._SX700_.jpg",
   color: ['pink', 'yellow', 'red', 'white'],
   size: [16,18,19,20,21,22],
-  classification: Classification.KID
+  category_id: 3
 },
 
 {
@@ -255,7 +255,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/71CTLljiSML._SX700_.jpg",
   color: ['black', 'ribbon red', 'charcoal'],
   size: [16,17,18,19,20],
-  classification: Classification.KID
+  category_id: 3
 },
 
 {
@@ -266,7 +266,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81EsV6X2J8L._SX700_.jpg",
   color: ['black', 'white', 'pink', 'fuchsia'],
   size: [16,18,19,20],
-  classification: Classification.KID
+  category_id: 3
 },
 
 {
@@ -277,7 +277,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/711wj7mvQtL._SX700_.jpg",
   color: ['desert rose', 'black', 'white'],
   size: [16,18,19,20,21,22,23],
-  classification: Classification.KID
+  category_id: 3
 },
 
 {
@@ -288,7 +288,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81wTP6n94lL._SX700_.jpg",
   color: ['black', 'white', 'cool grey', 'navy'],
   size: [39,40,41,42,43,44],
-  classification: Classification.MEN
+  category_id: 1
 },
 
 {
@@ -299,7 +299,7 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81Ba5XgUvOL._SX700_.jpg",
   color: ['charcoal', 'canvas', 'black', 'black and white checker'],
   size: [39,40,41,42,43,44],
-  classification: Classification.MEN
+  category_id: 1
 },
 
 {
@@ -310,6 +310,6 @@ export const products = [
   image: "https://m.media-amazon.com/images/I/81pVbGzmvWL._SX700_.jpg",
   color: ['black', 'white', 'marshmallow', 'gum', 'parisian night', 'multi', 'ebony'],
   size: [39,40,41,42],
-  classification: Classification.MEN
+  category_id: 1
 }
 ]

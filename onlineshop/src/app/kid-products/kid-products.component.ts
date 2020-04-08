@@ -30,7 +30,7 @@ export class KidProductsComponent implements OnInit {
   }
 
   getProductsKid():void{
-    this.category_productService.getProductsKid(Classification.KID).subscribe(products => this.products = products);
+    this.category_productService.getProductsKid(3).subscribe(products => this.products = products);
   }
 
   goBack(){

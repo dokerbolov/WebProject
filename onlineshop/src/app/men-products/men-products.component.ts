@@ -29,7 +29,7 @@ export class MenProductsComponent implements OnInit {
   }
 
   getProductsMen():void{
-    this.category_productService.getProductsMen(Classification.MEN).subscribe(products => this.products = products);
+    this.category_productService.getProductsMen(1).subscribe(products => this.products = products);
   }
 
   goBack(){
