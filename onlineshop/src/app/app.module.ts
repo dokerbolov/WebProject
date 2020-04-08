@@ -9,6 +9,9 @@ import { CategoriesComponent } from './categories/categories.component';
 import { MenProductsComponent } from './men-products/men-products.component';
 import { KidProductsComponent } from './kid-products/kid-products.component';
 import { WomenProductsComponent } from './women-products/women-products.component';
+import { MenProductDetailComponent } from './men-product-detail/men-product-detail.component';
+import { WomenProductDetailComponent } from './women-product-detail/women-product-detail.component';
+import { KidProductDetailComponent } from './kid-product-detail/kid-product-detail.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { WomenProductsComponent } from './women-products/women-products.componen
       CategoriesComponent,
       MenProductsComponent,
       KidProductsComponent,
-      WomenProductsComponent
+      WomenProductsComponent,
+      MenProductDetailComponent,
+      WomenProductDetailComponent,
+      KidProductDetailComponent
    ],
    imports: [
       BrowserModule,

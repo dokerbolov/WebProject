@@ -12,10 +12,7 @@ import { Category_productService } from '../category_product.service';
 export class WomenProductsComponent implements OnInit {
 
   products: Product[] = [];
-
-  empty():void{
-    this.products.length = 0;
-  }
+  selectedProduct: Product;
 
   constructor(
     private category_productService: Category_productService,
@@ -26,12 +23,15 @@ export class WomenProductsComponent implements OnInit {
     this.getProductsWomen();
   }
 
+  onSelect(product: Product): void{
+    this.selectedProduct = product;
+  }
+
   getProductsWomen(){
     this.category_productService.getProductsWomen(2).subscribe(products => this.products = products);
   }
 
   goBack():void{
-    this.empty();
     this.location.back();
   }
 

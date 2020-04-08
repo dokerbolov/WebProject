@@ -5,6 +5,7 @@ import { Category_productService } from './../category_product.service';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { products } from '../products';
+import { empty } from 'rxjs';
 
 @Component({
   selector: 'app-men-products',
@@ -14,10 +15,7 @@ import { products } from '../products';
 export class MenProductsComponent implements OnInit {
 
   products: Product[] = [];
-
-  empty():void{
-      this.products.length = 0;
-  }
+  selectedProduct: Product;
 
   constructor(
     private category_productService: Category_productService,
@@ -28,12 +26,15 @@ export class MenProductsComponent implements OnInit {
     this.getProductsMen();
   }
 
+  onSelect(product: Product): void{
+    this.selectedProduct = product;
+  }
+
   getProductsMen():void{
     this.category_productService.getProductsMen(1).subscribe(products => this.products = products);
   }
 
   goBack(){
-    this.empty();
     this.location.back();
   }
 }

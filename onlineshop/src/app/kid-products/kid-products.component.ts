@@ -15,10 +15,7 @@ import { Classification } from 'src/Classification.enum';
 export class KidProductsComponent implements OnInit {
 
   products: Product[] = [];
-
-  empty():void{
-    this.products.length = 0;
-  }
+  selectedProduct: Product;
 
   constructor(
     private category_productService: Category_productService,
@@ -29,12 +26,15 @@ export class KidProductsComponent implements OnInit {
     this.getProductsKid();
   }
 
+  onSelect(product: Product): void{
+    this.selectedProduct = product;
+  }
+
   getProductsKid():void{
     this.category_productService.getProductsKid(3).subscribe(products => this.products = products);
   }
 
   goBack(){
-    this.empty();
     this.location.back();
   }
 

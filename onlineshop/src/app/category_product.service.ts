@@ -32,6 +32,7 @@ export class Category_productService {
 
   getProductsMen(id: number): Observable<Product[]>
   {
+    this.productsMen.length = 0;
     for(var product of products){
       if(product.category_id === id){
         this.productsMen.push(product);
@@ -42,6 +43,7 @@ export class Category_productService {
 
   getProductsWomen(id: number): Observable<Product[]>
   {
+    this.productsWomen.length = 0;
     for(var product of products){
       if(product.category_id === id){
         this.productsWomen.push(product);
@@ -52,6 +54,7 @@ export class Category_productService {
 
   getProductsKid(id: number): Observable<Product[]>
   {
+    this.productsKid.length = 0;
     for(var product of products){
       if(product.category_id === id){
         this.productsKid.push(product);

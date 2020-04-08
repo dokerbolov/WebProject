@@ -1,5 +1,5 @@
 <div style="display: inline-flex; margin: 10px;" *ngFor="let product of products">
-  <a style="text-decoration: none;">
+  <a style="text-decoration: none;" routerLink="/categories/Kid/products/{{product.id}}" (click)="onSelect(product)">
     <img style="width: 300px;" src="{{product.image}}">
     <div style="text-align: center; width: 300px;">
       <h3>
