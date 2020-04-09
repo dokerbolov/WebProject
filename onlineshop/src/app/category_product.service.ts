@@ -40,12 +40,7 @@ export class Category_productService {
 
   getProduct(id:number): Observable<Product>
   {
-    const url = `${this.productsUrl}/${id}`;
-    return this.http.get<Product>(url).pipe(
-      map(products => products[0]),
-      tap(h => ('fetched')),
-      catchError(this.handleError<Product>(`getProduct id=${id}`))
-    );
+    return of(products.find(product => product.id === id));
   }
 
   getCategories(): Observable<Category[]>
