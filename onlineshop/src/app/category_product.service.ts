@@ -28,11 +28,7 @@ export class Category_productService {
 
   getProducts(): Observable<Product[]>
   {
-    return this.http.get<Product[]>(this.productsUrl)
-    .pipe(
-      tap(_ => ('fetched heroes')),
-      catchError(this.handleError<Product[]>('getProduct', []))
-    );
+    return of(products);
   }
 
   private handleError<T>(operation = 'operation', result?: T) {

@@ -1,31 +1,5 @@
 <html>
   <body>
-<<<<<<< HEAD
-    <p>
-      Products
-    </p>
-    <p>
-      <a routerLink="/categories">Categories</a>
-      <br>
-      <button style="visibility: hidden;" routerLink="/admin-panel">Admin</button>
-    </p>
-    <div style="display: inline-flex; margin: 10px;" *ngFor="let product of products">
-        <a style="text-decoration: none;" routerLink="/products/{{product.id}}" (click)="onSelect(product)">
-          <img style="width: 300px;" src="{{product.image}}">
-          <div style="text-align: center; width: 300px;">
-          <h3>
-            {{product.name}}
-          </h3>
-          <p>
-            {{product.description}}
-          </p>
-          <p>
-            {{product.price}}
-          </p>
-          </div>
-        </a>
-    </div>
-=======
     <app-header></app-header>
       <p class="main">
         Products
@@ -39,7 +13,7 @@
         </div>
         <div class="divProduct">
           <div  *ngFor="let product of products" class="allPr">
-            <div class="productDetail"> 
+            <div class="productDetail">
               <a style="text-decoration: none;" routerLink="/products/{{product.id}}" (click)="onSelect(product)">
                 <div class="boxIm"><img src="{{product.image}}" class="prodIm"></div>
                 <div class="details">
@@ -60,12 +34,11 @@
             </div>
         </div>
         </div>
-            
-        
+
+
         <div class="posleProduct"></div>
       </div>
-      
-   
->>>>>>> 31ce06fd9ff6dfe73ed8e0968977a8d5f1b9607b
+
+
   </body>
 </html>
