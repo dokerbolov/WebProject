@@ -4,20 +4,21 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #34495e;
+    margin: auto;
 }
 .box{
     width: 300px;
     padding: 40px;
-    position: absolute;
+    position: static;
+    margin: auto;
+    display: block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #191919;
     text-align: center;
 }
 .box h1{
-    color: white;
+    color: black;
     text-transform: uppercase;
     font-weight: 500;
 }
