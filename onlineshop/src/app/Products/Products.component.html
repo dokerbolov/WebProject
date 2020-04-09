@@ -1,5 +1,6 @@
 <html>
   <body>
+<<<<<<< HEAD
     <p>
       Products
     </p>
@@ -24,5 +25,47 @@
           </div>
         </a>
     </div>
+=======
+    <app-header></app-header>
+      <p class="main">
+        Products
+      </p>
+      <p>
+        <a routerLink="/categories">Categories</a>
+      </p>
+      <div id="main">
+        <div class="divrek">
+
+        </div>
+        <div class="divProduct">
+          <div  *ngFor="let product of products" class="allPr">
+            <div class="productDetail"> 
+              <a style="text-decoration: none;" routerLink="/products/{{product.id}}" (click)="onSelect(product)">
+                <div class="boxIm"><img src="{{product.image}}" class="prodIm"></div>
+                <div class="details">
+                <h4>
+                  {{product.name}}
+                </h4>
+                <p class="descriptionPrd">
+                  {{product.description}}
+                </p>
+                <p>
+                  {{product.price}}
+                </p>
+                <p>
+                  {{product.classification}}
+                </p>
+                </div>
+              </a>
+            </div>
+        </div>
+        </div>
+            
+        
+        <div class="posleProduct"></div>
+      </div>
+      
+   
+>>>>>>> 31ce06fd9ff6dfe73ed8e0968977a8d5f1b9607b
   </body>
 </html>
