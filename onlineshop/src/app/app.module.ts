@@ -9,6 +9,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { MenProductsComponent } from './men-products/men-products.component';
 import { KidProductsComponent } from './kid-products/kid-products.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HeaderComponent } from './header/header.component';
       CategoriesComponent,
       MenProductsComponent,
       KidProductsComponent,
-      HeaderComponent
+      HeaderComponent,
+      FooterComponent
    ],
    imports: [
       BrowserModule,
