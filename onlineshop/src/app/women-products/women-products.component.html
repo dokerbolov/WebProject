@@ -1,18 +1,47 @@
-<div style="display: inline-flex; margin: 10px" *ngFor="let product of products">
-  <a style="text-decoration: none;" routerLink="/categories/Women/products/{{product.id}}" (click)="onSelect(product)">
-    <img style="width: 300px;" src="{{product.image}}">
-    <div style="text-align: center; width: 300px;">
-      <h3>
-        {{product.name}}
-      </h3>
-      <p>
-        {{product.description}}
-      </p>
-      <p>
-        {{product.price}}
-      </p>
+<html>
+  <body>
+    <div class="all">
+     <div class="header"> <app-header></app-header></div>
+     <div class="betweenCon">
+       
+     </div>
+      <div class="main">
+        <div id="main">
+          <div class="divrek">
+
+          </div>
+          <div class="divProduct">
+            <div  *ngFor="let product of products" class="allPr">
+              <div class="productDetail">
+                <a style="text-decoration: none;" routerLink="/categories/Women/products/{{product.id}}" (click)="onSelect(product)">
+                  <div class="boxIm"><img src="{{product.image}}" class="prodIm"></div>
+                  <div class="details">
+                  <h4 id="title">
+                    {{product.name}}
+                  </h4>
+                  <p class="descriptionPrd">
+                    {{product.description}}
+                  </p>
+                  <p>
+                    {{product.price}}
+                  </p>
+
+                  </div>
+                </a>
+              </div>
+          </div>
+          </div>
+
+
+          <div class="posleProduct"></div>
+        </div>
+
+      </div>
+
     </div>
-  </a>
-</div>
-<br>
-<button (click)="goBack()">Back</button>
+    <div class="betweenCon1">
+
+    </div>
+    <app-footer></app-footer>
+  </body>
+</html>

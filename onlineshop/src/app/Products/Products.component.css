@@ -18,21 +18,29 @@
     
 }
 .divrek{
-    width:20%;
+    width:10%;
     height: 300px;
-    margin: 10px;
+    margin: 20px;
 }
 .posleProduct{
     height: auto;
-    width: 10%;
-    margin: 10px;
+    width: 6%;
+    margin: 10;
 }
 
+.betweenCon{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 40px;
+    margin-top: 85px;
+    background-color: aquamarine;
+}
 
 .divProduct
 {
+    margin-left: 10px;
     display: inline-flexbox;
-    width: 70%;
+    width: 84%;
     height: auto;
 }
 .allPr{
@@ -90,7 +98,12 @@ p{
     transition: 0.3s;
 }
 
-
+.betweenCon1{
+    width: 100%;
+    height: 20px;
+    margin-top: 160px;
+    background-color: aquamarine;
+}
 
 /* .prodIm:hover{
     width: 230px;
