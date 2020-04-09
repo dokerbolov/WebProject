@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <h1>Product {{product.name}}</h1>
+    <p>
+      Description: {{product.description}}
+    </p>
+    <p>
+      Price: {{product.price}}
+    </p>
+    <button (click)="goBack()">Back</button>
+    <div>
+      <label> Name:
+        <input [(ngModel)]="product.name" placeholder = "description" #name>
+      </label>
+      <br>
+      <label> Price:
+        <input [(ngModel)]="product.price" placeholder = "price" #price>
+      </label>
+      <br>
+      <label> Description:
+        <input [(ngModel)]="product.description" placeholder = "description" #description>
+      </label>
+      <br>
+      <label> Color:
+        <input [(ngModel)]="product.color" placeholder = "description" #color>
+      </label>
+      <br>
+      <button (click)="save(name.value,price.value,description.value,color.value)">Save</button>
+    </div>
+  </body>
+</html>

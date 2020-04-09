@@ -1,5 +1,6 @@
+import { CartService } from './../Cart.service';
+import { Product } from './../../Shop';
 import { Category_productService } from './../category_product.service';
-import { Product } from 'src/Shop';
 import { products } from './../products';
 import { Component, OnInit } from '@angular/core';
 
@@ -13,7 +14,8 @@ export class ProductsComponent implements OnInit {
   products: Product[] = [];
   selectedProduct: Product;
 
-  constructor(private category_productService: Category_productService) { }
+  constructor(private category_productService: Category_productService,
+    private cartservice: CartService) { }
 
   ngOnInit() {
     this.getProducts();
@@ -25,6 +27,11 @@ export class ProductsComponent implements OnInit {
 
   getProducts():void{
     this.category_productService.getProducts().subscribe(products => this.products = products);
+  }
+
+  addToCard(product: Product):void{
+    this.cartservice.addToCard(product);
+    window.alert('Product is added');
   }
 
 }

@@ -17,8 +17,8 @@
       <div class="border"></div>
       <p>Enter Your Email to get our news and sales.</p>
       <form action="" class="newsletter-form">
-        <input type="text" class="txtb" placeholder="Enter Your Email">
-        <input type="submit" class="btn" value="submit">
+        <input type="text" class="txtb" placeholder="Enter Your Email" #email>
+        <input type="submit" class="btn" value="submit" (click)="sendMessage(email.value)">
       </form>
     </div>
   </div>

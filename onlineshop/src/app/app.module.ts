@@ -22,6 +22,9 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AddElementComponent } from './add-element/add-element.component';
+import { AdminProductDetailComponent } from './admin-product-detail/admin-product-detail.component';
+import { CartComponent } from './Cart/Cart.component';
 
 
 @NgModule({
@@ -41,27 +44,18 @@ import { FooterComponent } from './footer/footer.component';
       RegistrationComponent,
       HeaderComponent,
       HeaderComponent,
-      FooterComponent
+      FooterComponent,
+      AddElementComponent,
+      AdminProductDetailComponent,
+      CartComponent
    ],
    imports: [
       BrowserModule,
       FormsModule,
       AppRoutingModule,
       HttpClientModule,
-
-      HttpClientInMemoryWebApiModule.forRoot(
-        InMemoryDataService, {dataEncapsulation: false}
-      ),
-      RouterModule.forRoot([
-         {
-            path: 'login',
-            component: LoginComponent
-         },
-         {
-            path: 'registration',
-            component: RegistrationComponent
-         }
-      ])
+      HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,
+      {dataEncapsulation:false})
    ],
    providers: [],
    bootstrap: [
