@@ -12,4 +12,8 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  sendMessage(email:string):void{
+    alert("The message has been sent to:" + email);
+  }
+
 }

@@ -1,33 +1,43 @@
 <html>
   <body>
-    <p>
-      Products
-    </p>
-    <p>
-      <a routerLink="/categories">Categories</a>
-    </p>
-    <div>
-      <label>
-        Product name:
-        <input #productName />
-      </label>
-      <button (click)="add(productName.value); productName.value=''">add</button>
-    </div>
-    <div style="display: inline-flex; margin: 10px;" *ngFor="let product of products">
-        <a style="text-decoration: none;" routerLink="/products/{{product.id}}" (click)="onSelect(product)">
-          <img style="width: 300px;" src="{{product.image}}">
-          <div style="text-align: center; width: 300px;">
-          <h3>
-            {{product.name}}
-          </h3>
-          <p>
-            {{product.description}}
-          </p>
-          <p>
-            {{product.price}}
-          </p>
+    <div class="all">
+     <div class="header"> <app-header></app-header></div>
+      <div class="choices">
+        <!-- <a routerLink="/add-element">Add element</a> -->
+      </div>
+      <div class="main">
+        <div id="main">
+          <div class="divrek">
           </div>
-        </a>
+          <div class="divProduct">
+            <div  *ngFor="let product of products" class="allPr">
+              <div class="productDetail">
+                <a style="text-decoration: none;" routerLink="/admin-product-detail/{{product.id}}" (click)="onSelect(product)">
+                  <div class="boxIm"><img src="{{product.image}}" class="prodIm"></div>
+                  <div class="details">
+                  <h4 id="title">
+                    {{product.name}}
+                  </h4>
+                  <p class="descriptionPrd">
+                    {{product.description}}
+                  </p>
+                  <p>
+                    {{product.price}}
+                  </p>
+                  <button (click)="deleteProduct(product)">Delete</button>
+                  </div>
+                </a>
+              </div>
+          </div>
+          </div>
+
+
+          <div class="posleProduct"></div>
+        </div>
+
+      </div>
+
     </div>
+    <app-footer></app-footer>
   </body>
 </html>

@@ -82,7 +82,21 @@ export class Category_productService {
   }
 
   addProduct(product: Product): Observable<Product>{
-    return this.http.post<Product>(this.productsUrl, product, this.httpOptions);
+      products.push(product);
+      return;
+  }
+
+  deleteProduct(product: Product | number): Observable<Product>{
+    const id = typeof product === 'number' ? product: product.id;
+    return;
+    // deleteHero (hero: Hero | number): Observable<Hero> {
+    //   const id = typeof hero === 'number' ? hero : hero.id;
+    //   const url = `${this.heroesUrl}/${id}`;
+    //   return this.http.delete<Hero>(url, this.httpOptions).pipe(
+    //     tap(_ => this.log(`deleted hero id=${id}`)),
+    //     catchError(this.handleError<Hero>('deleteHero'))
+    //   );
+    // }
   }
 
 

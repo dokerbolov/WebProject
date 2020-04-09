@@ -32,9 +32,8 @@ export class ProductAdminComponent implements OnInit {
     this.category_productService.getProducts().subscribe(products => this.products = products);
   }
 
-  add(name:string):void{
-    name = name.trim();
-    if(!name){return}
-    this.category_productService.addProduct({name} as Product).subscribe(product => this.products.push(product));
+  deleteProduct(product: Product):void{
+    this.products = this.products.filter(p => p !== product);
+    this.category_productService.deleteProduct(product).subscribe();
   }
 }

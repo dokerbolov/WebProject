@@ -1,3 +1,5 @@
+import { AdminProductDetailComponent } from './admin-product-detail/admin-product-detail.component';
+import { AddElementComponent } from './add-element/add-element.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProductAdminComponent } from './product-admin/product-admin.component';
@@ -12,6 +14,7 @@ import { ProductsDetailComponent } from './ProductsDetail/ProductsDetail.compone
 import { MenProductDetailComponent } from './men-product-detail/men-product-detail.component';
 import { WomenProductDetailComponent } from './women-product-detail/women-product-detail.component';
 import { KidProductDetailComponent } from './kid-product-detail/kid-product-detail.component';
+import { CartComponent } from './Cart/Cart.component';
 
 
 
@@ -28,7 +31,10 @@ const routes: Routes = [
   {path: 'categories/Kid/products/:id', component: KidProductDetailComponent},
   {path: 'admin-panel', component: ProductAdminComponent},
   {path: 'registration', component: RegistrationComponent},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'add-element', component: AddElementComponent},
+  {path: 'admin-product-detail/:id', component: AdminProductDetailComponent},
+  {path: 'cart', component: CartComponent}
 ];
 
 @NgModule({
