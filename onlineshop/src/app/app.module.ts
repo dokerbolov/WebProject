@@ -1,15 +1,21 @@
 import { InMemoryDataService } from './InMemoryData.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+<<<<<<< HEAD
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+=======
+>>>>>>> 371a4e2015af0a052fda246aad139838bf07c59c
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router'
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './Products/Products.component';
 import { ProductsDetailComponent } from './ProductsDetail/ProductsDetail.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { MenProductsComponent } from './men-products/men-products.component';
+<<<<<<< HEAD
 import { KidProductsComponent } from './kid-products/kid-products.component';
 <<<<<<< HEAD
 import { WomenProductsComponent } from './women-products/women-products.component';
@@ -21,6 +27,10 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 =======
 import { HeaderComponent } from './header/header.component';
 >>>>>>> 31ce06fd9ff6dfe73ed8e0968977a8d5f1b9607b
+=======
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+>>>>>>> 371a4e2015af0a052fda246aad139838bf07c59c
 
 
 @NgModule({
@@ -30,6 +40,7 @@ import { HeaderComponent } from './header/header.component';
       ProductsDetailComponent,
       CategoriesComponent,
       MenProductsComponent,
+<<<<<<< HEAD
       KidProductsComponent,
 <<<<<<< HEAD
       WomenProductsComponent,
@@ -50,6 +61,25 @@ import { HeaderComponent } from './header/header.component';
       HttpClientInMemoryWebApiModule.forRoot(
         InMemoryDataService, {dataEncapsulation: false}
       )
+=======
+      LoginComponent,
+      RegistrationComponent
+   ],
+   imports: [
+      BrowserModule,
+      AppRoutingModule,
+      HttpClientModule,
+      RouterModule.forRoot([
+         {
+            path: 'login',
+            component: LoginComponent
+         },
+         {
+            path: 'registration',
+            component: RegistrationComponent
+         }
+      ])
+>>>>>>> 371a4e2015af0a052fda246aad139838bf07c59c
    ],
    providers: [],
    bootstrap: [
