@@ -1,5 +1,6 @@
 <html>
   <body>
+<<<<<<< HEAD
     <app-header></app-header>
       <p class="main">
         Products
@@ -40,5 +41,55 @@
       </div>
 
 
+=======
+    <div class="all">
+     <div class="header"> <app-header></app-header></div>
+      <div class="choices">
+        <p class="">
+          Products
+        </p>
+        <p>
+          <a routerLink="/categories">Categories</a>
+        </p>
+      </div>
+      <div class="main">
+        <div id="main">
+          <div class="divrek">
+  
+          </div>
+          <div class="divProduct">
+            <div  *ngFor="let product of products" class="allPr">
+              <div class="productDetail"> 
+                <a style="text-decoration: none;" routerLink="/products/{{product.id}}" (click)="onSelect(product)">
+                  <div class="boxIm"><img src="{{product.image}}" class="prodIm"></div>
+                  <div class="details">
+                  <h4 id="title">
+                    {{product.name}}
+                  </h4>
+                  <p>
+                    {{product.classification}}
+                  </p>
+                  <p class="descriptionPrd">
+                    {{product.description}}
+                  </p>
+                  <p>
+                    {{product.price}}
+                  </p>
+                  
+                  </div>
+                </a>
+              </div>
+          </div>
+          </div>
+              
+          
+          <div class="posleProduct"></div>
+        </div>
+        
+      </div>
+      
+    </div>
+    <app-footer></app-footer>
+>>>>>>> 0c62038560622f6ab517a5b61a3283cca35805c7
   </body>
 </html>

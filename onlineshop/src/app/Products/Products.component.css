@@ -1,4 +1,15 @@
-
+.all{
+    
+    display: inline-block;
+}
+.header{
+    width: 100%;
+    display: block;
+}
+.choices{
+    display: block;
+    margin-top: 120px;
+}
 #main{
     position: static;
     width:100%;
@@ -25,10 +36,12 @@
     height: auto;
 }
 .allPr{
-    width:250px;
+    width:auto;
     display: inline-block;
     height: auto;
     margin: 10px;
+}
+.allPr{
 }
 .productDetail{
     width:250px;
@@ -36,12 +49,11 @@
     display: inline-flexbox;
 }
 .boxIm{
-    align-content: center;
+    text-align: center;
 }
 .prodIm{
     width: 210px;
     height: 190px;
-    
 }
 .details{
     text-align: center; 
@@ -50,3 +62,41 @@
 .descriptionPrd{
     display: none;
 }
+#title{
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width: 250px;
+    height: auto;
+    margin: 0px;
+    
+}
+p{
+    margin: 0px;
+}
+.allPr{
+    margin: 10px;
+}
+.productDetail:hover a div img{
+    width: 220px;
+    height: 205px;
+    transition: 0.3s;
+}
+.productDetail:hover .details #title{
+    overflow:visible;
+    width: 250px;
+    height: auto;
+    white-space:normal;
+    transition: 0.3s;
+}
+
+
+
+/* .prodIm:hover{
+    width: 230px;
+    height: 205px;
+}
+.prodIm:hover #title{
+  
+    
+} */

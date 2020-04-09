@@ -13,6 +13,7 @@ import { ProductsDetailComponent } from './ProductsDetail/ProductsDetail.compone
 import { CategoriesComponent } from './categories/categories.component';
 import { MenProductsComponent } from './men-products/men-products.component';
 import { KidProductsComponent } from './kid-products/kid-products.component';
+<<<<<<< HEAD
 import { WomenProductsComponent } from './women-products/women-products.component';
 import { MenProductDetailComponent } from './men-product-detail/men-product-detail.component';
 import { WomenProductDetailComponent } from './women-product-detail/women-product-detail.component';
@@ -21,6 +22,10 @@ import { ProductAdminComponent } from './product-admin/product-admin.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+=======
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+>>>>>>> 0c62038560622f6ab517a5b61a3283cca35805c7
 
 
 @NgModule({
@@ -31,6 +36,7 @@ import { RegistrationComponent } from './registration/registration.component';
       CategoriesComponent,
       MenProductsComponent,
       KidProductsComponent,
+<<<<<<< HEAD
       WomenProductsComponent,
       MenProductDetailComponent,
       WomenProductDetailComponent,
@@ -39,6 +45,10 @@ import { RegistrationComponent } from './registration/registration.component';
       LoginComponent,
       RegistrationComponent,
       HeaderComponent,
+=======
+      HeaderComponent,
+      FooterComponent
+>>>>>>> 0c62038560622f6ab517a5b61a3283cca35805c7
    ],
    imports: [
       BrowserModule,
