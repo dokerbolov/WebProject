@@ -13,11 +13,10 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #191919;
+    background: #f7f0ac;
     text-align: center;
 }
 .box h1{
-    color: white;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -48,7 +47,6 @@ body{
     border: 2px solid #2ecc71;
     padding: 14px 40px;
     outline: none;
-    color: white;
     border-radius: 24px;
     transition: 0.2s;
     cursor: pointer;
