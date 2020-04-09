@@ -1,3 +1,4 @@
+import { ProductAdminComponent } from './product-admin/product-admin.component';
 import { WomenProductsComponent } from './women-products/women-products.component';
 import { KidProductsComponent } from './kid-products/kid-products.component';
 import { MenProductsComponent } from './men-products/men-products.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path: 'categories/Women/products', component: WomenProductsComponent},
   {path: 'categories/Women/products/:id', component: WomenProductDetailComponent},
   {path: 'categories/Kid/products', component: KidProductsComponent},
-  {path: 'categories/Kid/products/:id', component: KidProductDetailComponent}
+  {path: 'categories/Kid/products/:id', component: KidProductDetailComponent},
+  {path: 'admin-panel', component: ProductAdminComponent}
 ];
 
 @NgModule({

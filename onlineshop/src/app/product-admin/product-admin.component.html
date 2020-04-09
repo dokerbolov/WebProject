@@ -5,9 +5,14 @@
     </p>
     <p>
       <a routerLink="/categories">Categories</a>
-      <br>
-      <button style="visibility: hidden;" routerLink="/admin-panel">Admin</button>
     </p>
+    <div>
+      <label>
+        Product name:
+        <input #productName />
+      </label>
+      <button (click)="add(productName.value); productName.value=''">add</button>
+    </div>
     <div style="display: inline-flex; margin: 10px;" *ngFor="let product of products">
         <a style="text-decoration: none;" routerLink="/products/{{product.id}}" (click)="onSelect(product)">
           <img style="width: 300px;" src="{{product.image}}">
