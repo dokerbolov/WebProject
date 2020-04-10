@@ -14,5 +14,5 @@ export interface Product {
   image: string;
   color: Array<string>;
   size: Array<number>;
-  classification: Classification;
+  category_id: number;
 }

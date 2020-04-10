@@ -14,6 +14,7 @@ import { ThrowStmt } from '@angular/compiler';
 export class CategoriesComponent implements OnInit {
 
   categories: Category[] = [];
+  selectedCategory: Category;
 
   constructor(
     private category_productService: Category_productService,
@@ -22,6 +23,10 @@ export class CategoriesComponent implements OnInit {
 
   ngOnInit() {
     this.getCategories();
+  }
+
+  onSelect(category: Category):void{
+    this.selectedCategory = category;
   }
 
   getCategories():void{
