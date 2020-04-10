@@ -1,3 +1,4 @@
+import { CartService } from './../Cart.service';
 import { MenProductsComponent } from './../men-products/men-products.component';
 import { Product } from './../../Shop';
 import { Location } from '@angular/common';
@@ -16,7 +17,8 @@ export class MenProductDetailComponent implements OnInit {
   constructor(
     private category_productService: Category_productService,
     private route: ActivatedRoute,
-    private location: Location) { }
+    private location: Location,
+    private cartservice: CartService) { }
 
   product: Product;
 
@@ -31,5 +33,10 @@ export class MenProductDetailComponent implements OnInit {
 
   goBack(){
     this.location.back();
+  }
+
+  addToCard(product: Product):void{
+    this.cartservice.addToCard(product);
+    window.alert('Product is added');
   }
 }
