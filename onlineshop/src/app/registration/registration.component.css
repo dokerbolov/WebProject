@@ -17,7 +17,8 @@ body{
     margin: auto;
     display: block;
     text-align: center;
-    background-color: #abcbf5;
+    background-color: aquamarine;
+    border-radius: 40px;
 }
 .box h1{
     color: black;

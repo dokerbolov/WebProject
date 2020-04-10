@@ -1,5 +1,7 @@
 import { CartService } from './../Cart.service';
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-Cart',
@@ -12,6 +14,8 @@ export class CartComponent implements OnInit {
 
   constructor(
     private cartservice: CartService,
+    private route: ActivatedRoute,
+    private location: Location
   ) { }
 
   ngOnInit() {
@@ -20,6 +24,9 @@ export class CartComponent implements OnInit {
 
   clearCart(){
     this.items.length = 0;
+  }
+  goBack(){
+    this.location.back();
   }
 
   buyItems(){
