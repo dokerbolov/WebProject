@@ -26,7 +26,11 @@ const routes: Routes = [
   {path: 'categories', component: CategoriesComponent},
   {path: 'categories/Men/products', component: MenProductsComponent},
   {path: 'contacts', component: ContactsComponent},
+<<<<<<< HEAD
   {path: 'about', component: AboutUsComponent},
+=======
+  {path: 'about', component: AboutUsComponent}
+>>>>>>> 400a20139b3cf021bf8e8be23127f83a89308707
   {path: 'categories/Men/products/:id', component: MenProductDetailComponent},
   {path: 'categories/Women/products', component: WomenProductsComponent},
   {path: 'categories/Women/products/:id', component: WomenProductDetailComponent},
