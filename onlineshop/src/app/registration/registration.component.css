@@ -9,10 +9,16 @@ body{
 .box{
     width: 300px;
     padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f7f0ac;
     margin: auto;
     display: block;
     text-align: center;
-    background-color: #abcbf5;
+    background-color: aquamarine;
+    border-radius: 40px;
 }
 .box h1{
     color: black;
@@ -46,7 +52,6 @@ body{
     border: 2px solid #2ecc71;
     padding: 14px 40px;
     outline: none;
-    color: white;
     border-radius: 24px;
     transition: 0.2s;
     cursor: pointer;

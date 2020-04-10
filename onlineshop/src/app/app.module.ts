@@ -43,7 +43,6 @@ import { CartComponent } from './Cart/Cart.component';
       LoginComponent,
       RegistrationComponent,
       HeaderComponent,
-      HeaderComponent,
       FooterComponent,
       AddElementComponent,
       AdminProductDetailComponent,
