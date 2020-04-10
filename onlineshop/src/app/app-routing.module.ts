@@ -11,11 +11,9 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ProductsComponent } from './Products/Products.component';
 import { ProductsDetailComponent } from './ProductsDetail/ProductsDetail.component';
-import { MenProductDetailComponent } from './men-product-detail/men-product-detail.component';
-import { WomenProductDetailComponent } from './women-product-detail/women-product-detail.component';
-import { KidProductDetailComponent } from './kid-product-detail/kid-product-detail.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 import { CartComponent } from './Cart/Cart.component';
-
 
 
 const routes: Routes = [
@@ -24,6 +22,8 @@ const routes: Routes = [
   {path: 'products/:id', component: ProductsDetailComponent},
   {path: 'categories', component: CategoriesComponent},
   {path: 'categories/Men/products', component: MenProductsComponent},
+  {path: 'contacts', component: ContactsComponent},
+  {path: 'about', component: AboutUsComponent}
   {path: 'categories/Men/products/:id', component: MenProductDetailComponent},
   {path: 'categories/Women/products', component: WomenProductsComponent},
   {path: 'categories/Women/products/:id', component: WomenProductDetailComponent},
