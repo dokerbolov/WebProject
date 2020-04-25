@@ -25,6 +25,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AddElementComponent } from './add-element/add-element.component';
 import { AdminProductDetailComponent } from './admin-product-detail/admin-product-detail.component';
 import { CartComponent } from './Cart/Cart.component';
+import { TestGetsComponent } from './test-gets/test-gets.component';
 
 
 @NgModule({
@@ -46,15 +47,14 @@ import { CartComponent } from './Cart/Cart.component';
       FooterComponent,
       AddElementComponent,
       AdminProductDetailComponent,
-      CartComponent
+      CartComponent,
+      TestGetsComponent
    ],
    imports: [
       BrowserModule,
       FormsModule,
       AppRoutingModule,
       HttpClientModule,
-      HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService,
-      {dataEncapsulation:false})
    ],
    providers: [],
    bootstrap: [

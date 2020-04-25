@@ -4,6 +4,8 @@ import { Component, OnInit } from '@angular/core';
 import { Category_productService } from '../category_product.service';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/Shop';
+import { ApiService } from '../api.service';
+import { Prodaction } from 'src/models';
 
 @Component({
   selector: 'app-kid-product-detail',
@@ -16,17 +18,24 @@ export class KidProductDetailComponent implements OnInit {
     private category_productService: Category_productService,
     private route: ActivatedRoute,
     private location: Location,
-    private cartservice: CartService) { }
+    private cartservice: CartService,
+    private apiService:ApiService) { }
 
   product: Product;
+  production:Prodaction;
 
   ngOnInit() {
-    this.getProduct();
+    this.getProductItem();
   }
 
   getProduct():void{
     const id = +this.route.snapshot.paramMap.get('id');
     this.category_productService.getProduct(id).subscribe(product => this.product = product);
+  }
+
+  getProductItem(){
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.apiService.getProductItem(id).subscribe(production=>this.production=production);
   }
 
   goBack(){

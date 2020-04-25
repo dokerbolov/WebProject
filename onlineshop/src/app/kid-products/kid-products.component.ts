@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 import { Category_productService } from '../category_product.service';
 import { ActivatedRoute } from '@angular/router';
 import { Classification } from 'src/Classification.enum';
+import { ApiService } from '../api.service';
+import { Prodaction } from 'src/models';
 
 
 @Component({
@@ -16,13 +18,15 @@ import { Classification } from 'src/Classification.enum';
 export class KidProductsComponent implements OnInit {
 
   products: Product[] = [];
+  productions: Prodaction[] = [];
   selectedProduct: Product;
 
   constructor(
     private category_productService: Category_productService,
     private route: ActivatedRoute,
     private location: Location,
-    private cartservice: CartService) { }
+    private cartservice: CartService,
+    private apiService:ApiService) { }
 
   ngOnInit() {
     this.getProductsKid();
@@ -33,7 +37,7 @@ export class KidProductsComponent implements OnInit {
   }
 
   getProductsKid():void{
-    this.category_productService.getProductsKid(3).subscribe(products => this.products = products);
+    this.apiService.getProductsKids().subscribe(productions => this.productions = productions);
   }
 
   goBack(){
