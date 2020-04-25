@@ -7,6 +7,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { products } from '../products';
 import { empty } from 'rxjs';
+import { ApiService } from '../api.service';
+import { Prodaction } from 'src/models';
 
 @Component({
   selector: 'app-men-products',
@@ -16,13 +18,15 @@ import { empty } from 'rxjs';
 export class MenProductsComponent implements OnInit {
 
   products: Product[] = [];
+  productions:Prodaction[]=[];
   selectedProduct: Product;
 
   constructor(
     private category_productService: Category_productService,
     private route: ActivatedRoute,
     private location: Location,
-    private cartservice: CartService) { }
+    private cartservice: CartService,
+    private apiService:ApiService) { }
 
   ngOnInit() {
     this.getProductsMen();
@@ -33,7 +37,7 @@ export class MenProductsComponent implements OnInit {
   }
 
   getProductsMen():void{
-    this.category_productService.getProductsMen(1).subscribe(products => this.products = products);
+    this.apiService.getProductsMen().subscribe(productions=>this.productions=productions);
   }
 
   goBack(){
