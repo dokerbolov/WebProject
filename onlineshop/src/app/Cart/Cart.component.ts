@@ -1,3 +1,5 @@
+import { Prodaction } from 'src/models';
+import { ApiService } from './../api.service';
 import { ProductsComponent } from './../Products/Products.component';
 import { CartService } from './../Cart.service';
 import { Component, OnInit, Query } from '@angular/core';
@@ -11,12 +13,14 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 })
 export class CartComponent implements OnInit {
 
-  items =[];
+  items: Prodaction[] = [];
+  productId: number[] = [];
 
   constructor(
     private cartservice: CartService,
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private apiService: ApiService
   ) { }
 
   ngOnInit() {
@@ -30,7 +34,15 @@ export class CartComponent implements OnInit {
     this.location.back();
   }
 
+  getProductIdes(): number[]{
+    for (let i in this.items){
+      this.productId.push(this.items[i].id);
+    }
+    return this.productId;
+  }
+
   buyItems(){
+    this.apiService.createOrder(parseInt(localStorage.getItem("userId")),this.getProductIdes()).subscribe();
     alert("You order is received");
     this.items.length = 0;
   }

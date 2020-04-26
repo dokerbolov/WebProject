@@ -16,3 +16,4 @@ export interface Product {
   size: Array<number>;
   category_id: number;
 }
+

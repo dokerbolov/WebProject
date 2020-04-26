@@ -26,3 +26,11 @@ export class Company{
     city:string;
     address:string;
 }
+
+export class Order{
+  id: number;
+  owner: number;
+  date: Date;
+  status: string;
+  products: Array<number>;
+}

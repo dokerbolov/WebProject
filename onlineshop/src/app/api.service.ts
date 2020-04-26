@@ -1,3 +1,5 @@
+import { Order } from './../models';
+import { products } from './products';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -50,6 +52,8 @@ export class ApiService {
   saveProductChange(product: Prodaction, id):Observable<Prodaction>{
     return this.http.put<Prodaction>(`http://127.0.0.1:8000/api/products/${id}/`, product);
   }
-
+  createOrder(owner: number, products: Array<number>):Observable<Order>{
+    return this.http.post<Order>("http://127.0.0.1:8000/api/orders/",{owner,products});
+  }
 
 }

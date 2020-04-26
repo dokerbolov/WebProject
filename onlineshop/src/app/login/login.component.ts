@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
         this.username = '';
         this.password = '';
         this.location.back();
-        alert('You are succesfully logged ') 
+        alert('You are succesfully logged ');
       }
       );
   }
