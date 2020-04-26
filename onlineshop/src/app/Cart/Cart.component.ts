@@ -1,7 +1,8 @@
+import { ProductsComponent } from './../Products/Products.component';
 import { CartService } from './../Cart.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Query } from '@angular/core';
 import { Location } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-Cart',
@@ -33,5 +34,4 @@ export class CartComponent implements OnInit {
     alert("You order is received");
     this.items.length = 0;
   }
-
 }

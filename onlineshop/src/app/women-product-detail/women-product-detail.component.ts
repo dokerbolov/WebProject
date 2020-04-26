@@ -21,16 +21,10 @@ export class WomenProductDetailComponent implements OnInit {
     private cartservice: CartService,
     private apiService:ApiService) { }
 
-  product: Product;
   production:Prodaction;
 
   ngOnInit() {
     this.getProductItem();
-  }
-
-  getProduct():void{
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.category_productService.getProduct(id).subscribe(product => this.product = product);
   }
 
   getProductItem(){
@@ -42,8 +36,8 @@ export class WomenProductDetailComponent implements OnInit {
     this.location.back();
   }
 
-  addToCard(product: Product):void{
-    this.cartservice.addToCard(product);
+  addToCard(production: Prodaction):void{
+    this.cartservice.addToCard(production);
     window.alert('Product is added');
   }
 }

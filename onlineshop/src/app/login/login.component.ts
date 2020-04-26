@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
   constructor(private apiService: ApiService, private location: Location) { }
 
   ngOnInit() {
-    
+
   }
 
   login(){
@@ -25,11 +25,9 @@ export class LoginComponent implements OnInit {
         this.apiService.getUserId(this.username).subscribe(id=>
           this.id = id.toString()
           )
-         console.log(this.id); 
         this.username = '';
         this.password = '';
-         this.location.back();
-         alert('You are succesfully logged '+this.id) 
+        this.location.back();
       }
       );
   }

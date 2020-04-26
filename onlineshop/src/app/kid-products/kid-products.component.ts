@@ -44,7 +44,7 @@ export class KidProductsComponent implements OnInit {
     this.location.back();
   }
 
-  addToCard(product: Product):void{
+  addToCard(product: Prodaction):void{
     this.cartservice.addToCard(product);
     window.alert('Product is added');
   }
