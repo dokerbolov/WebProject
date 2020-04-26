@@ -36,7 +36,7 @@ export class ProductsComponent implements OnInit {
     this.category_productService.getProducts().subscribe(products => this.products = products);
   }
 
-  addToCard(product: Product):void{
+  addToCard(product: Prodaction):void{
     this.cartservice.addToCard(product);
     window.alert('Product is added');
   }

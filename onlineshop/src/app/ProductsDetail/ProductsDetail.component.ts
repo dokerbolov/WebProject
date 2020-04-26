@@ -22,16 +22,10 @@ export class ProductsDetailComponent implements OnInit {
     private apiService: ApiService
   ) { }
 
-  product: Product;
   production:Prodaction;
 
   ngOnInit() {
     this.getProductItem();
-  }
-
-  getProduct():void{
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.category_productService.getProduct(id).subscribe(product => this.product = product);
   }
 
   goBack(){
@@ -43,8 +37,8 @@ export class ProductsDetailComponent implements OnInit {
     this.apiService.getProductItem(id).subscribe(production=>this.production=production);
   }
 
-  addToCard(product: Product):void{
-    this.cartservice.addToCard(product);
+  addToCard(production: Prodaction):void{
+    this.cartservice.addToCard(production);
     window.alert('Product is added');
   }
 

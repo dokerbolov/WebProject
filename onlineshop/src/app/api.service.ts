@@ -24,7 +24,7 @@ export class ApiService {
   }
 
   getProductItem(id):Observable<Prodaction>{
-    return this.http.get<Prodaction>(`http://127.0.0.1:8000/api/products/${id}`);
+    return this.http.get<Prodaction>(`http://127.0.0.1:8000/api/products/${id}/`);
   }
   getProductsWomen():Observable<Prodaction[]>{
     return this.http.get<Prodaction[]>("http://127.0.0.1:8000/api/products/women/");
@@ -45,10 +45,10 @@ export class ApiService {
     return this.http.get<UserId>(`http://127.0.0.1:8000/api/users/${username}/`);
   }
   deleteProduct(id):Observable<Prodaction>{
-    return this.http.delete<Prodaction>(`http://127.0.0.1:8000/api/products/${id}`);
+    return this.http.delete<Prodaction>(`http://127.0.0.1:8000/api/products/${id}/`);
   }
   saveProductChange(product: Prodaction, id):Observable<Prodaction>{
-    return this.http.put<Prodaction>(`http://127.0.0.1:8000/api/products/${id}`, product);
+    return this.http.put<Prodaction>(`http://127.0.0.1:8000/api/products/${id}/`, product);
   }
 
 
