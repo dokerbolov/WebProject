@@ -42,8 +42,14 @@ export class CartComponent implements OnInit {
   }
 
   buyItems(){
-    this.apiService.createOrder(parseInt(localStorage.getItem("userId")),this.getProductIdes()).subscribe();
-    alert("You order is received");
-    this.items.length = 0;
+    let check = localStorage.getItem('token');
+    if(check != null){
+        this.apiService.createOrder(parseInt(localStorage.getItem('serId')),this.getProductIdes()).subscribe();
+        alert('You order is received');
+        this.items.length = 0;
+    }
+    else{
+      window.alert('Make a authorization');
+    }
   }
 }
