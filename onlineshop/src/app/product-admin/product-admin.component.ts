@@ -1,3 +1,5 @@
+import { Prodaction } from './../../models';
+import { ApiService } from './../api.service';
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Category_productService } from '../category_product.service';
@@ -11,11 +13,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProductAdminComponent implements OnInit {
 
-  products: Product[] = [];
+  products: Prodaction[] = [];
   selectedProduct: Product;
 
   constructor(
-    private category_productService: Category_productService,
+    private apiService: ApiService,
     private route: ActivatedRoute,
     private location: Location
     ) { }
@@ -29,11 +31,6 @@ export class ProductAdminComponent implements OnInit {
   }
 
   getProducts():void{
-    this.category_productService.getProducts().subscribe(products => this.products = products);
-  }
-
-  deleteProduct(product: Product):void{
-    this.products = this.products.filter(p => p !== product);
-    this.category_productService.deleteProduct(product).subscribe();
+    this.apiService.getProductsList().subscribe(products => this.products = products);
   }
 }

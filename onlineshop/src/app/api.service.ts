@@ -1,14 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Prodaction, Company, LoginResponse, UserId } from 'src/models';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ApiService {
 
-constructor(private http: HttpClient) { }
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
+  constructor(private http: HttpClient) { }
 
   getProductsList(): Observable<Prodaction[]>{
     return this.http.get<Prodaction[]>("http://127.0.0.1:8000/api/products/");
@@ -38,6 +43,12 @@ constructor(private http: HttpClient) { }
   }
   getUserId(username):Observable<UserId>{
     return this.http.get<UserId>(`http://127.0.0.1:8000/api/users/${username}/`);
+  }
+  deleteProduct(id):Observable<Prodaction>{
+    return this.http.delete<Prodaction>(`http://127.0.0.1:8000/api/products/${id}`);
+  }
+  saveProductChange(product: Prodaction, id):Observable<Prodaction>{
+    return this.http.put<Prodaction>(`http://127.0.0.1:8000/api/products/${id}`, product);
   }
 
 
