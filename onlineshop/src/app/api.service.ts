@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Prodaction, Company, LoginResponse } from 'src/models';
+import { Prodaction, Company, LoginResponse, UserId } from 'src/models';
 
 @Injectable({
   providedIn: 'root'
@@ -41,8 +41,8 @@ export class ApiService {
   loginUser(username,password):Observable<LoginResponse>{
     return this.http.post<LoginResponse>("http://127.0.0.1:8000/api/auth/",{username,password});
   }
-  getUserId(username):Observable<number>{
-    return this.http.get<number>(`http://127.0.0.1:8000/api/users/${username}/`);
+  getUserId(username):Observable<UserId>{
+    return this.http.get<UserId>(`http://127.0.0.1:8000/api/users/${username}/`);
   }
   deleteProduct(id):Observable<Prodaction>{
     return this.http.delete<Prodaction>(`http://127.0.0.1:8000/api/products/${id}/`);
@@ -50,5 +50,6 @@ export class ApiService {
   saveProductChange(product: Prodaction, id):Observable<Prodaction>{
     return this.http.put<Prodaction>(`http://127.0.0.1:8000/api/products/${id}/`, product);
   }
+
 
 }

@@ -16,10 +16,8 @@ export class Category{
 export class LoginResponse{
     token:string;
 }
-export class User{
+export class UserId{
     id:number;
-    username:string;
-    password:string;
 }
 export class Company{
     id: number;
