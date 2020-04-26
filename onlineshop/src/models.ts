@@ -4,8 +4,8 @@ export class Prodaction{
     description: string;
     price: number;
     image: string;
-    color: string;
-    size: string;
+    color: Array<string>;
+    size: Array<number>;
     category_id: number;
 }
 
