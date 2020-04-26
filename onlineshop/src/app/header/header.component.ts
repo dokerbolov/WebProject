@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
     let token = localStorage.getItem('token');
     if(token != null){
       alert('You are logged');
+      this.location.back();
     }
 
   }
