@@ -17,7 +17,6 @@ import { Prodaction } from 'src/models';
 export class MenProductDetailComponent implements OnInit {
 
   constructor(
-    private category_productService: Category_productService,
     private route: ActivatedRoute,
     private location: Location,
     private cartservice: CartService,
@@ -28,11 +27,6 @@ export class MenProductDetailComponent implements OnInit {
 
   ngOnInit() {
     this.getProductItem();
-  }
-
-  getProduct():void{
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.category_productService.getProduct(id).subscribe(product => this.product = product);
   }
 
   getProductItem(){
