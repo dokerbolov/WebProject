@@ -14,7 +14,7 @@
       <li><a href="#" routerLink="/products">Sales </a></li>
       <li><a href="#" routerLink="/about">About us </a></li>
       <li><a href="#" routerLink="/contacts">Contact</a></li>
-      <li><a id="loginReg" routerLink='/login'>Login</a><span id="slash"> &#47; </span><a id="loginReg" routerLink="" >Logout</a></li>
+      <li><a id="loginReg" routerLink='/login' (click)="checkLogin()">Login</a><span id="slash"> &#47; </span><a id="loginReg" routerLink="" (click)="logout()">Logout</a></li>
       <li><a routerLink="/cart">Cart</a></li>
       <li style="visibility: hidden;"><a routerLink="/admin-panel">Admin</a></li>
     </ul>

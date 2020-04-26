@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from '@angular/common'
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private location:Location, private route: ActivatedRoute) { }
 
   ngOnInit() {
+  }
+
+  logout(){
+    localStorage.removeItem('token');
+  }
+
+  checkLogin(){
+    let token = localStorage.getItem('token');
+    if(token != null){
+      alert('You are logged');
+    }
+
   }
 
 }
