@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Prodaction, Company } from 'src/models';
+import { Prodaction, Company, LoginResponse } from 'src/models';
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +16,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getProductsList(): Observable<Prodaction[]>{
-    return this.http.get<Prodaction[]>("http://127.0.0.1:8000/api/products/")
+    return this.http.get<Prodaction[]>("http://127.0.0.1:8000/api/products/");
   }
 
   getCompaniesList(): Observable<Company[]>{
@@ -34,6 +34,15 @@ export class ApiService {
   }
   getProductsMen():Observable<Prodaction[]>{
     return this.http.get<Prodaction[]>("http://127.0.0.1:8000/api/products/men/");
+  }
+  registerNewUser(username,password):Observable<any>{
+    return this.http.post<any>("http://127.0.0.1:8000/api/users/",{username,password});
+  }
+  loginUser(username,password):Observable<LoginResponse>{
+    return this.http.post<LoginResponse>("http://127.0.0.1:8000/api/auth/",{username,password});
+  }
+  getUserId(username):Observable<number>{
+    return this.http.get<number>(`http://127.0.0.1:8000/api/users/${username}/`);
   }
   deleteProduct(id):Observable<Prodaction>{
     return this.http.delete<Prodaction>(`http://127.0.0.1:8000/api/products/${id}`);

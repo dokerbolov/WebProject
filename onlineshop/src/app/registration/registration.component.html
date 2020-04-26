@@ -18,12 +18,13 @@
      <div class="betweenCon">  
     </div>
     <div>
-        <form class="box"action="registration.component.html">
+        <form class="box" action="registration.component.html" >
             <h1>join us</h1>
-            <input type="text" placeholder="Username" id="username">
-            <input type="password" placeholder="Password" id="password">
-            <input type="password" placeholder="Confirm password" id="password">
-            <input class = "btn" type="submit" value="SIGN UP">
+            <input type="text" placeholder="Username"  [(ngModel)]="register.username" name="username">
+            <input type="password" placeholder="Password"  [(ngModel)]="register.password" name="password">
+            <input type="password" placeholder="Confirm password"  [(ngModel)]="confirmPassword" [ngModelOptions]="{standalone:
+                true}">
+            <input class = "btn" type="submit" (click)="registerUser()" value="SIGN UP">
         </form>
     </div>
 </div>

@@ -13,6 +13,14 @@ export class Category{
     id:number;
     name:string;
 }
+export class LoginResponse{
+    token:string;
+}
+export class User{
+    id:number;
+    username:string;
+    password:string;
+}
 export class Company{
     id: number;
     name: string;
